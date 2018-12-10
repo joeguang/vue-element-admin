@@ -12,6 +12,7 @@ export default{
   components: { SwitchRoles },
   methods: {
     handleRolesChange() {
+      console.log('RolesChanged')
       this.$router.push({ path: '/permission/index?' + +new Date() })
     }
   }
